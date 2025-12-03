@@ -81,11 +81,11 @@ WSGI_APPLICATION = 'gym_pro.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': env("DB_NAME"),
-        'USER': env("DB_USERNAME"),
-        'PASSWORD': env("DB_PASSWORD"),
-        'HOST': env("DB_HOST"),
-        'PORT': env("DB_PORT")
+        'NAME': env("DB"),
+        'USER': env("USER"),
+        'PASSWORD': env("PASS"),
+        'HOST': env("HOST"),
+        'PORT': env("PORT")
     }
 }
 
